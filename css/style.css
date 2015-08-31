@@ -1,0 +1,121 @@
+/** Set Area **/
+
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+body {
+	background-image: url('../img/bg.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	color: #FFFFFF;
+}
+
+div {
+	display: flex;
+}
+/** end **/
+
+
+/** menu **/
+
+#menu-button {
+	display: inline-block;
+	font-size: 30px;
+	margin: 20px
+}
+
+#close-menu  {
+	position: fixed;
+	right: 0;
+	font-size: 40px;
+	width: 48px;
+	height: 48px;
+}
+
+#menu {
+	display: none;
+	width: 100%;
+	height: 100px;
+	padding: 20px 10px;
+	box-sizing: border-box;
+	background-color: #FF9800;
+	z-index: 1;
+	position: fixed;
+}
+
+.item {
+	text-align: center;
+	font-size: 40px;
+	padding: 0 20px;
+}
+/** end **/
+
+
+/** header **/
+
+#header {
+	background-color: #303F9F; /* primary color */
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+	min-height: 100%;
+	display: block;
+	text-align: center;
+	position: absolute;
+}
+
+	/* image */
+	#header > img {
+		border: 3px solid #C5CAE9;
+		border-radius: 90px;
+		width: 180px;
+		height: 180px;
+		margin-top: 50px;
+	}
+
+
+	/* text */
+	#header > h1 {
+		margin: 0 auto;
+
+	}
+
+	#header > h2 {
+		margin-top: 0;
+		font-size: 24px;
+	}
+
+	#resume {
+		margin: 40px auto;
+		color: #FFFFFF;
+		padding: 20px;
+		width: 50%;
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+	}
+
+
+	/* Skills on categories */
+	#categories {
+		margin: 10px auto;
+		text-align: center;
+		display: inline-block;
+	}
+
+	.selected {
+		color: #FF9800;
+	}
+
+	#categories > div {
+		width: 120px;
+		height: 120px;
+		margin: 20px;
+		display: inherit;
+	}
+
+
+/** end **/

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Marco Antônio - Portfólio</title>
+
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+
+	<!-- Font/Icons -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,700italic' rel='stylesheet' type='text/css'> <!-- Roboto Font -->
+	<link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" /> <!-- MDL Icons -->
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> <!-- FontAwesome -->
+
+	
+	<!-- JavaScript -->
+	<script src="node_modules/material-design-lite/material.min.js"></script>
+	<script type='text/javascript' src='./node_modules/jquery/dist/jquery.js'></script>
+	<script type='text/javascript' src='./js/script.js'></script>
+
+</head>
+<body>
+
+	<!-- menu -->
+	<div id="menu">
+		<div class="mdl-layout-spacer"></div>
+
+		<div class='item'>
+			<a href="#">
+				<i class="mdi mdi-home"></i><p>Home<p>
+			</a>
+		</div>
+		
+		<div class='item'>
+			<a href="#">
+				<i class="mdi mdi-cellphone-link"></i><p>Projetos<p>
+			</a>
+		</div>
+
+		<div class='item'>
+			<a href="#">
+				<i class="mdi mdi-message-text"></i><p>Contato<p>
+			</a>
+		</div>
+
+		<div class="mdl-layout-spacer"></div>
+		<div id='close-menu'>
+			<a href="#">
+				<i class="fa fa-angle-up"></i>
+			</a>
+		</div>
+
+	</div>
+
+	<!-- header -->
+	<div id="header">
+
+		<div class="mdl-layout-spacer"></div>
+
+		<div id='menu-button'>
+			<a href="#">
+				<i class="mdi mdi-menu"></i>	
+			</a>
+		</div>
+
+		<div class="mdl-layout-spacer"></div>
+
+		<img id='photo' src="./img/me.jpg" alt="Marco Antônio">
+		<div class="mdl-tooltip" for="photo">
+			It's me, Marco!
+		</div>
+		<h1>Marco Antônio</h1>
+		<h2>Desenvolvedor - Designer - Inovador</h2>
+
+
+		<div id="categories" >
+
+			<div>
+				<a href="#" class="selected">
+					<i class="fa fa-desktop fa-4x"></i>
+					<p>Web</p>
+				</a>
+			</div>
+
+			<div> 
+				<a href="#">
+					<i class="fa fa-mobile fa-4x"></i> 
+					<p>Mobile</p> 
+				</a>
+			</div>
+
+			<div> 
+				<a href="#">
+					<i class="fa fa-code fa-4x"></i> 
+					<p>Others</p> 
+				</a>
+			</div>
+
+		</div>
+
+	</div>
+	
+</body>
+</html>
