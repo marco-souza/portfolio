@@ -12,6 +12,7 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/animate.css">
 
 
 	<!-- Font/Icons -->
@@ -19,11 +20,20 @@
 	<link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" /> <!-- MDL Icons -->
 	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> <!-- FontAwesome -->
 
-	
+
 	<!-- JavaScript -->
 	<script src="node_modules/material-design-lite/material.min.js"></script>
 	<script type='text/javascript' src='./node_modules/jquery/dist/jquery.js'></script>
 	<script type='text/javascript' src='./js/script.js'></script>
+	<script type='text/javascript' src="http://www.marcoguglielmelli.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js"></script>
+	<script type='text/javascript' src="http://www.marcoguglielmelli.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js"></script>
+	<script type='text/javascript' src="http://www.marcoguglielmelli.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
+
+
+	<script type='text/javascript' src="./js/wow.min.js"></script>
+	<script>
+	new WOW().init();
+	</script>
 
 </head>
 <body>
@@ -37,17 +47,20 @@
 				<i class="mdi mdi-home"></i><p>Home<p>
 			</a>
 		</div>
-		
+
 		<div class='item'>
-			<a href="#">
+			<a href="https://www.behance.net/masouzajr">
 				<i class="mdi mdi-cellphone-link"></i><p>Projetos<p>
 			</a>
 		</div>
 
 		<div class='item'>
-			<a href="#">
+			<a id='email' href="mailto:ma.souza.junior@gmail.com?subject=Contato">
 				<i class="mdi mdi-message-text"></i><p>Contato<p>
 			</a>
+			<div class="mdl-tooltip" for="email">
+				ma.souza.junior@gmail.com
+			</div>
 		</div>
 
 		<div class="mdl-layout-spacer"></div>
@@ -61,51 +74,60 @@
 
 	<!-- header -->
 	<div id="header">
+		<canvas id="demo-canvas"></canvas>
 
 		<div class="mdl-layout-spacer"></div>
 
 		<div id='menu-button'>
 			<a href="#">
-				<i class="mdi mdi-menu"></i>	
+				<i class="mdi mdi-menu"></i>
 			</a>
 		</div>
 
 		<div class="mdl-layout-spacer"></div>
 
-		<img id='photo' src="./img/me.jpg" alt="Marco Antônio">
-		<div class="mdl-tooltip" for="photo">
-			It's me, Marco!
-		</div>
+		<img id='photo' class='wow fadeIn' src="./img/me.jpg" alt="Marco Antônio">
 		<h1>Marco Antônio</h1>
-		<h2>Desenvolvedor - Designer - Inovador</h2>
+		<BR>
+		<h2>Full Stack Developer - Entusiasta GNU/Linux - Empreendedor</h2>
 
 
 		<div id="categories" >
 
 			<div>
-				<a href="#" class="selected">
-					<i class="fa fa-desktop fa-4x"></i>
-					<p>Web</p>
+				<a id='linkedin' class='wow rotateIn' href="https://www.linkedin.com/in/masouzajunior">
+					<i class="fa fa-linkedin-square fa-4x"></i>
+					<p>LinkedIn</p>
 				</a>
+				<div class="mdl-tooltip" for="linkedin">
+					Meu Currículo
+				</div>
 			</div>
 
-			<div> 
-				<a href="#">
-					<i class="fa fa-mobile fa-4x"></i> 
-					<p>Mobile</p> 
+			<div>
+				<a id='github' class='wow rotateIn'  href="https://github.com/marco-souza">
+					<i class="fa fa-github-square fa-4x"></i>
+					<p>Github</p>
 				</a>
+				<div class="mdl-tooltip" for="github">
+					Meus códigos
+				</div>
 			</div>
 
-			<div> 
-				<a href="#">
-					<i class="fa fa-code fa-4x"></i> 
-					<p>Others</p> 
+			<div>
+				<a id='behance' class='wow rotateIn' href="https://www.behance.net/masouzajr">
+					<i class="fa fa-behance-square fa-4x"></i>
+					<p>Behence</p>
 				</a>
+				<div class="mdl-tooltip" for="behance">
+					Meu Portfólio
+				</div>
 			</div>
 
 		</div>
 
 	</div>
-	
+	<script type='text/javascript' src="./js/bg.js"></script>
+
 </body>
 </html>

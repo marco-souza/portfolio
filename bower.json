@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "homepage": "http://homepages.dcc.ufmg.br/~marco.souza/",
+  "authors": [
+    "Marco Antônio <ma.souza.junior@gmail.com>"
+  ],
+  "description": "Meu cartão de visitas online.",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "Marco",
+    "Antônio",
+    "Full",
+    "Stack",
+    "Developer",
+    "Linux",
+    "Enthusiast"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ]
+}
