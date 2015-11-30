@@ -130,3 +130,9 @@ div {
 	left: 0;
 }
 /** end **/
+
+/*Download div*/
+.download {
+	display: block !important;
+	width: 100% !important;
+}
